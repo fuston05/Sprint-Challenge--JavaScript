@@ -1,5 +1,5 @@
 // ==== Objects ====
-
+ 
 /* 
   Given the following information about dinosaurs, create 3 objects: 
   Use this pattern to create your objects: 
@@ -8,27 +8,66 @@
 
 // tyrannosaurus, carnivorous, 7000kg, 12m, Late Cretaceous
 
+  class Tyrannosaurus{
+    constructor(name, diet, weight, length, period){
+      this.name= name;
+      this.diet= diet;
+      this.weight= weight;
+      this.length= length;
+      this.period= period;
+    }//end constructor
+    roar(){
+      return "RAWERSRARARWERSARARARRRR!";
+    }
+  }
+
 // stegosaurus, herbivorous, 2000kg, 9m, Late Jurassic
+class Stegosaurus{
+  constructor(name, diet, weight, length, period){
+    this.name= name;
+    this.diet= diet;
+    this.weight= weight;
+    this.length= length;
+    this.period= period;
+
+  }//end constructor
+}
 
 // velociraptor, carnivorous, 15kg, 1.8m, Late Cretaceous
+class Velociraptor{
+  constructor(name, diet, weight, length, period){
+    this.name= name;
+    this.diet= diet;
+    this.weight= weight;
+    this.length= length;
+    this.period= period;
+
+  }//end constructor
+}
+
 
 // Using your dinosaur objects, log answers to these questions:
 
+
 // How much did tyrannosaurus weigh?
-console.log();
+const tyrannosaurus= new Tyrannosaurus("tyrannosaurus", "carnivorous", "7000kg", "12m", "Late Cretaceous") ;
+console.log(tyrannosaurus.weight);
 
 // What was the diet of a velociraptor?
-console.log();
+
+const velociraptor= new Velociraptor("velociraptor", "carnivorous", "15kg", "1.8m", "Late Cretaceous");
+console.log(velociraptor.diet);
 
 // How long was a stegosaurus?
-console.log();
+const stegosaurus= new Stegosaurus("stegosaurus", "herbivorous", "2000kg", "9m", "Late Jurassic");
+console.log(stegosaurus.length);
 
 // What time period did tyrannosaurus live in?
-console.log();
+console.log(tyrannosaurus.period);
 
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-console.log();
+console.log(tyrannosaurus.roar());
 
 
 // ==== Arrays ====
